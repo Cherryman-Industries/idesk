@@ -1,0 +1,18 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	text-rendering: optimizeLegibility;
+}
+
+html,
+body {
+	font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+	font-size: 10px;
+}
+
+body {
+	font-size: 1.5rem;
+}
