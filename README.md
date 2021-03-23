@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+# Frontend Application for idesk
+
+[demo site](https://sleepy-bhabha-9e2e1e.netlify.app/) link
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
