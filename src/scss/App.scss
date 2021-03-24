@@ -1,47 +1,71 @@
 @import './globals';
 
 .app {
-	display: flex;
-	flex-direction: column;
-	min-height: 100vh;
-	width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
 }
 
 .navbar {
-	padding: 2rem 0;
+    height: 8rem;
+    line-height: 8rem;
 
-	&__logo {
-		font-size: xx-large;
-		margin-left: 12rem;
-	}
+    &__logo {
+        font-size: xx-large;
+        margin-left: 12rem;
+    }
 }
 
 .main {
-	flex-grow: 1;
-	border: 3rem solid white;
-	border-top: 0;
-	display: flex;
+    border: 3rem solid white;
+    border-top: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 8rem);
 }
 
 .landing {
-	flex-grow: 1;
-	background: url('https://images.unsplash.com/photo-1583867758244-57aa86356c59?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=3264&q=80');
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: cover;
+    background: url('https://images.unsplash.com/photo-1583867758244-57aa86356c59?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=3264&q=80');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-grow: 1;
+    padding: 10rem 0 0 10rem;
 
-	&__text {
-		color: white;
-		width: 30rem;
-		margin: 9rem 0 0 9rem;
-	}
+    &__text {
+        color: white;
+        max-width: 30rem;
+        transform: translateY(-1rem);
+        width: 100%;
+    }
 
-	&__title {
-		font-size: 4rem;
-		font-weight: 400;
-	}
+    &__title {
+        font-size: 4rem;
+        font-weight: 400;
+    }
 
-	&__subtitle {
-		margin-top: 2rem;
-	}
+    &__subtitle {
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: $tablet) {
+    .navbar__logo {
+        margin-left: 7rem;
+    }
+
+    .landing {
+        padding: 17rem 0 0 4rem;
+    }
+}
+
+@media (max-width: $mobile-lg) {
+    .navbar__logo {
+        margin-left: 5rem;
+    }
+
+    .landing {
+        padding-left: 2rem;
+    }
 }
