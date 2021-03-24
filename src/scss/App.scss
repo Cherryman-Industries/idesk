@@ -13,7 +13,7 @@
 
     &__logo {
         align-items: center;
-        display: flex;
+        display: inline-block;
         font-size: 4rem;
         font-weight: 300;
         justify-content: flex-start;
@@ -31,7 +31,7 @@
 }
 
 .landing {
-    background: url('../assets/images/d room - d benching_V7_mini.png');
+    background-image: url('../assets/images/d room - d benching_V7_mini.png');
     background-position: 43% 60%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -77,15 +77,43 @@
     }
 }
 
-@media (max-width: $mobile-lg) {
+@media (max-width: $mobile-portrait) {
     .navbar {
         height: 5rem;
         line-height: 5rem;
 
         &__logo {
             font-size: 2.5rem;
-            margin-left: 4rem;
+            margin-left: 5.5rem;
         }
+    }
+
+    .landing {
+        background-image: url('../assets/images/d room - d benching_V7-2_mobile_portrait.jpg');
+        background-position: 50% 100%;
+        padding: 3rem 0 0 3rem;
+
+        &__text {
+            max-width: 22rem;
+        }
+
+        &__title {
+            font-size: 2.75rem;
+            letter-spacing: 0.15rem;
+            line-height: 3.25rem;
+        }
+
+        &__subtitle {
+            font-size: 1rem;
+            letter-spacing: 0.05rem;
+        }
+    }
+}
+
+@media (max-width: $mobile-lg) {
+    .navbar__logo {
+        font-size: 2.5rem;
+        margin-left: 4rem;
     }
 
     .main {
@@ -93,22 +121,12 @@
     }
 
     .landing {
-        background: url('../assets/images/d room - d benching_V7-2_mobile_portrait.jpg');
+        background-image: url('../assets/images/d room - d benching_V7-2_mobile_portrait.jpg');
         background-position: center bottom;
-        padding-left: 2rem;
-
-        &__text {
-            max-width: 25rem;
-        }
-
-        &__title {
-            font-size: 3.25rem;
-            letter-spacing: 0.15rem;
-            line-height: 3.25rem;
-        }
+        padding: 17rem 0 0 2rem;
 
         &__subtitle {
-            font-size: 1rem;
+            letter-spacing: initial;
         }
     }
 }
