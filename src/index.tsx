@@ -1,8 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 import './scss/_index.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+
+AOS.init();
 
 ReactDOM.render(
   <React.StrictMode>
