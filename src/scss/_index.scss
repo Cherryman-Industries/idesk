@@ -1,3 +1,15 @@
+@font-face {
+    font-family: 'Yellow Design Studio';
+    font-weight: 300;
+    src: url('../assets/fonts/Yellow Design Studio - VerbLight.otf');
+}
+
+@font-face {
+    font-family: 'Yellow Design Studio';
+    font-weight: 400;
+    src: url('../assets/fonts/Yellow Design Studio - VerbMedium.otf');
+}
+
 *,
 *::before,
 *::after {
@@ -9,7 +21,7 @@
 
 html,
 body {
-    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-family: 'Yellow Design Studio', Arial, Helvetica, sans-serif;
     font-size: 10px;
 }
 
