@@ -12,9 +12,13 @@
     line-height: 8rem;
 
     &__logo {
-        font-size: xx-large;
+        align-items: center;
+        display: flex;
+        font-size: 4rem;
         font-weight: 300;
+        justify-content: flex-start;
         margin-left: 12rem;
+        transform: translateY(0.5rem);
     }
 }
 
@@ -28,33 +32,33 @@
 
 .landing {
     background: url('../assets/images/d room - d benching_V7_mini.png');
-    background-position: center center;
+    background-position: 43% 60%;
     background-repeat: no-repeat;
     background-size: cover;
     flex-grow: 1;
-    padding: 10rem 0 0 10rem;
+    padding: 10.5rem 0 0 9rem;
 
     &__text {
         color: white;
-        max-width: 30rem;
+        max-width: 35rem;
         transform: translateY(-1rem);
         width: 100%;
     }
 
     &__title {
-        font-size: 4rem;
+        font-size: 4.5rem;
+        letter-spacing: 0.3rem;
     }
 
     &__subtitle {
-        margin-top: 2rem;
+        font-size: 1.5rem;
+        font-weight: 300;
+        letter-spacing: 0.085rem;
+        margin-top: 1rem;
     }
 }
 
 @media (max-width: $tablet) {
-    .main {
-        border-width: 2.5rem;
-    }
-
     .navbar {
         height: 6rem;
         line-height: 6rem;
@@ -64,26 +68,47 @@
         }
     }
 
+    .main {
+        border-width: 2.5rem;
+    }
+
     .landing {
         padding: 17rem 0 0 4rem;
     }
 }
 
 @media (max-width: $mobile-lg) {
-    .main {
-        border-width: 2rem;
-    }
-
     .navbar {
         height: 5rem;
         line-height: 5rem;
 
         &__logo {
-            margin-left: 5rem;
+            font-size: 2.5rem;
+            margin-left: 4rem;
         }
     }
 
+    .main {
+        border-width: 2rem;
+    }
+
     .landing {
+        background: url('../assets/images/d room - d benching_V7-2_mobile_portrait.jpg');
+        background-position: center bottom;
         padding-left: 2rem;
+
+        &__text {
+            max-width: 25rem;
+        }
+
+        &__title {
+            font-size: 3.25rem;
+            letter-spacing: 0.15rem;
+            line-height: 3.25rem;
+        }
+
+        &__subtitle {
+            font-size: 1rem;
+        }
     }
 }
