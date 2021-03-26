@@ -8,22 +8,22 @@
 }
 
 .navbar {
-    height: 8rem;
-    line-height: 8rem;
+    height: 5rem;
+    line-height: 5rem;
 
     &__logo {
         align-items: center;
         display: inline-block;
-        font-size: 4rem;
+        font-size: 3rem;
         font-weight: 300;
         justify-content: flex-start;
-        margin-left: 12rem;
-        transform: translateY(0.5rem);
+        margin-left: 4.5rem;
+        margin-top: 0.25rem;
     }
 }
 
 .main {
-    border: 3rem solid white;
+    border: 2rem solid white;
     border-top: 0;
     display: flex;
     flex-direction: column;
@@ -31,102 +31,102 @@
 }
 
 .landing {
-    background-image: url('../assets/images/d room - d benching_V7_mini.png');
-    background-position: 43% 60%;
+    background-image: url('../assets/images/d room - d benching_V7-2_mobile_portrait.jpg');
+    background-position: 40% bottom;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 80rem;
     flex-grow: 1;
-    padding: 10.5rem 0 0 9rem;
+    padding: 16.5rem 0 0 2rem;
 
     &__text {
         color: white;
-        max-width: 35rem;
-        transform: translateY(-1rem);
+        max-width: 25rem;
         width: 100%;
     }
 
     &__title {
-        font-size: 4.5rem;
-        letter-spacing: 0.3rem;
+        font-size: 4rem;
+        font-weight: 300;
+        line-height: 4rem;
     }
 
     &__subtitle {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
         font-weight: 300;
-        letter-spacing: 0.085rem;
         margin-top: 1rem;
     }
 }
 
-@media (max-width: $tablet) {
-    .navbar {
-        height: 6rem;
-        line-height: 6rem;
+// @media (max-width: $tablet) {
+//     .navbar {
+//         height: 6rem;
+//         line-height: 6rem;
 
-        &__logo {
-            margin-left: 7rem;
-        }
-    }
+//         &__logo {
+//             margin-left: 7rem;
+//         }
+//     }
 
-    .main {
-        border-width: 2.5rem;
-    }
+//     .main {
+//         border-width: 2.5rem;
+//     }
 
-    .landing {
-        padding: 17rem 0 0 4rem;
-    }
-}
+//     .landing {
+//         padding: 17rem 0 0 4rem;
+//     }
+// }
 
-@media (max-width: $mobile-portrait) {
-    .navbar {
-        height: 5rem;
-        line-height: 5rem;
+// @media (max-width: $mobile-portrait) {
+//     .navbar {
+//         height: 5rem;
+//         line-height: 5rem;
 
-        &__logo {
-            font-size: 2.5rem;
-            margin-left: 5.5rem;
-        }
-    }
+//         &__logo {
+//             font-size: 2.5rem;
+//             margin-left: 5.5rem;
+//         }
+//     }
 
-    .landing {
-        background-image: url('../assets/images/d room - d benching_V7-2_mobile_portrait.jpg');
-        background-position: 50% 100%;
-        padding: 3rem 0 0 3rem;
+//     .landing {
+//         background-image: url('../assets/images/d room - d benching_V7-2_mobile_portrait.jpg');
+//         background-position: 50% 100%;
+//         padding: 3rem 0 0 3rem;
 
-        &__text {
-            max-width: 22rem;
-        }
+//         &__text {
+//             max-width: 22rem;
+//         }
 
-        &__title {
-            font-size: 2.75rem;
-            letter-spacing: 0.15rem;
-            line-height: 3.25rem;
-        }
+//         &__title {
+//             font-size: 2.75rem;
+//             letter-spacing: 0.15rem;
+//             line-height: 3.25rem;
+//         }
 
-        &__subtitle {
-            font-size: 1rem;
-            letter-spacing: 0.05rem;
-        }
-    }
-}
+//         &__subtitle {
+//             font-size: 1rem;
+//             letter-spacing: 0.05rem;
+//         }
+//     }
+// }
 
-@media (max-width: $mobile-lg) {
-    .navbar__logo {
-        font-size: 2.5rem;
-        margin-left: 4rem;
-    }
+// @media (max-width: $mobile-lg) {
+//     .navbar__logo {
+//         font-size: 2.5rem;
+//         margin-left: 4rem;
+//     }
 
-    .main {
-        border-width: 2rem;
-    }
+//     .main {
+//         border-width: 2rem;
+//     }
 
-    .landing {
-        background-image: url('../assets/images/d room - d benching_V7-2_mobile_portrait.jpg');
-        background-position: center bottom;
-        padding: 17rem 0 0 2rem;
+//     .landing {
+//         background-image: url('../assets/images/d room - d benching_V7-2_mobile_portrait.jpg');
+//         background-position: center bottom;
+//         background-size: 80rem;
+//         padding: 17rem 0 0 2rem;
 
-        &__subtitle {
-            letter-spacing: initial;
-        }
-    }
-}
+//         &__subtitle {
+//             letter-spacing: initial;
+//         }
+//     }
+// }
