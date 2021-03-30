@@ -32,10 +32,20 @@ const LandingForDesktop = () => (
         data-aos-easing="ease-out">
         instock program
       </h1>
-      <div className="landing__subtitle landing__subtitle--desktop">
+      <div
+        className="landing__subtitle landing__subtitle--desktop"
+        data-aos="fade-up"
+        data-aos-delay="450"
+        data-aos-easing="ease-out">
         <strong>D</strong> series&nbsp;&nbsp;&nbsp;by <strong>Carl Gustav Magnusson</strong>
       </div>
-      <button className="landing__call-to-action-button">more</button>
+      <button
+        className="landing__call-to-action-button"
+        data-aos="fade-right"
+        data-aos-delay="750"
+        data-aos-easing="ease-out">
+        more
+      </button>
     </div>
   </div>
 );
