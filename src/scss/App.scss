@@ -12,61 +12,61 @@
     display: flex;
     height: 5rem;
     justify-content: space-between;
+}
 
-    &__logo {
-        align-items: center;
-        display: inline-block;
-        font-size: 3rem;
-        font-weight: 300;
-        justify-content: flex-start;
-        margin-left: 4.5rem;
-        margin-top: 0.25rem;
+.navbar__logo {
+    align-items: center;
+    display: inline-block;
+    font-size: 3rem;
+    font-weight: 300;
+    justify-content: flex-start;
+    margin-left: 4.5rem;
+    margin-top: 0.25rem;
+}
+
+.navbar__buttons-container {
+    align-items: flex-end;
+    display: flex;
+    height: 100%;
+    margin-bottom: 3rem;
+    margin-right: 2rem;
+}
+
+.navbar__arrow-container {
+    border-bottom: 0.2rem solid black;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar__arrow-icon {
+    margin-bottom: 0.2rem;
+    position: relative;
+    width: 0.9rem;
+
+    &::before {
+        background-color: black;
+        content: '';
+        height: 5rem;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+}
+
+.navbar__burger-menu {
+    display: flex;
+    list-style-type: none;
+    margin-right: 1.8rem;
+
+    &-button {
+        background-color: black;
+        border-radius: 50%;
+        height: 0.4rem;
+        width: 0.4rem;
     }
 
-    &__buttons-container {
-        align-items: flex-end;
-        display: flex;
-        height: 100%;
-        margin-bottom: 3rem;
-        margin-right: 2rem;
-    }
-
-    &__arrow-container {
-        border-bottom: 0.2rem solid black;
-        display: flex;
-        justify-content: flex-end;
-    }
-
-    &__arrow-icon {
-        margin-bottom: 0.2rem;
-        position: relative;
-        width: 0.9rem;
-
-        &::before {
-            background-color: black;
-            content: '';
-            height: 5rem;
-            position: absolute;
-            top: 0;
-            width: 100%;
-        }
-    }
-
-    &__burger-menu {
-        display: flex;
-        list-style-type: none;
-        margin-right: 1.8rem;
-
-        &-button {
-            background-color: black;
-            border-radius: 50%;
-            height: 0.4rem;
-            width: 0.4rem;
-        }
-
-        &-button:not(:first-child) {
-            margin-left: 0.4rem;
-        }
+    &-button:not(:first-child) {
+        margin-left: 0.4rem;
     }
 }
 
@@ -84,12 +84,6 @@
     background-repeat: no-repeat;
     flex-grow: 1;
     padding: 16.5rem 0 0 2rem;
-
-    &__subtitle {
-        font-size: 1.25rem;
-        font-weight: 300;
-        margin-top: 1rem;
-    }
 }
 
 .landing__text {
@@ -97,18 +91,28 @@
     display: none;
     max-width: 25rem;
     width: 100%;
-
-    &--tablet {
-        display: initial;
-    }
-
-    &--desktop {
-        display: initial;
-    }
 }
 
-.landing__title {
-    font-size: 4rem;
-    font-weight: 300;
-    line-height: 4rem;
+@media (min-width: $tablet) {
+    .landing {
+        background-image: url('../assets/images/d room - d benching_V7-2_T.jpg');
+        background-position: 40% 93%;
+        background-size: 170rem;
+    }
+
+    .landing__text {
+        display: initial;
+    }
+
+    .landing__title {
+        font-size: 6.5rem;
+        letter-spacing: 0.2rem;
+        line-height: 5.5rem;
+    }
+
+    .landing__subtitle {
+        font-size: 2.1rem;
+        font-weight: 300;
+        margin-top: 2rem;
+    }
 }

@@ -23,7 +23,7 @@ const App = () => (
             data-aos="fade-down"
             data-aos-delay="150"
             data-aos-easing="ease-out">
-            an instock solution coming soon
+            an instock <br /> solution <br /> coming soon
           </h1>
           <div
             className="landing__subtitle"
