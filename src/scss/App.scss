@@ -10,7 +10,7 @@
 .navbar {
     align-items: flex-end;
     display: flex;
-    height: 5rem;
+    height: 3.75rem;
     justify-content: space-between;
 }
 
@@ -57,6 +57,7 @@
     display: flex;
     list-style-type: none;
     margin-right: 1.8rem;
+    position: relative;
 
     &-button {
         background-color: black;
@@ -80,28 +81,42 @@
 }
 
 .landing {
-    background-image: url('../assets/images/Opus Room 1_V12_PP.jpg');
-    background-position: 62% 8%;
-    background-repeat: no-repeat;
+    display: flex;
     flex-grow: 1;
-    padding: 16.5rem 0 0 2rem;
-
-    &__content {
-        display: none;
-    }
+    overflow: hidden;
+    position: relative;
 }
 
-.landing--desktop {
-    display: none;
+@media (max-width: $mobile-lg) {
+    .main {
+        border-bottom: 0;
+    }
+
+    .landing--desktop,
+    .landing--tablet {
+        display: none;
+    }
+
+    .landing__content {
+        display: none;
+        height: 0;
+    }
+
+    .landing__bg {
+        height: 105%;
+        left: -57rem;
+        object-fit: cover;
+        position: absolute;
+    }
 }
 
 @media (min-width: $tablet) {
     .navbar {
-        height: 4.5rem;
+        height: 3.2rem;
     }
 
     .navbar__logo {
-        font-size: 4.5rem;
+        font-size: 3.75rem;
         margin-left: 6.8rem;
         transform: translateY(2.5rem);
     }
@@ -115,10 +130,17 @@
         margin-top: 3rem;
     }
 
-    .landing {
-        background-image: url('../assets/images/d room - d benching_V7-2_T.jpg');
-        background-position: 40% 93%;
-        background-size: 170rem;
+    .landing--desktop,
+    .landing--mobile {
+        display: none;
+    }
+
+    .landing__bg {
+        background-color: blue;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        transform: scale(2.5s) translateY(-20rem);
     }
 
     .landing__content {
@@ -170,11 +192,14 @@
         }
     }
 
+    .landing--tablet,
+    .landing--mobile {
+        display: none;
+    }
+
     .landing {
         background-color: #e9e5e1;
-        background-image: url('../assets/images/d room - d benching_V7_mini.png');
-        background-position: 10rem 30%;
-        background-size: 300rem;
+        overflow: hidden;
         padding: 18rem 0 0 10rem;
 
         &--tablet {
@@ -184,6 +209,14 @@
         &--desktop {
             display: initial;
         }
+    }
+
+    .landing__bg {
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
     }
 
     .landing__subtitle {

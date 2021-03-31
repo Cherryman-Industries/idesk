@@ -1,8 +1,33 @@
 import './scss/App.scss';
 import DownArrow from './assets/svgs/down-arrow.svg';
+import MobileBG from './assets/images/Opus Room 1_V12_PP.jpg';
+import TabletBG from './assets/images/d room - d benching_V7-2_T.jpg';
+
+const LandingForMobile = () => (
+  <div className="landing landing--mobile">
+    <img src={MobileBG} className="landing__bg" alt="mobile-bg" />
+    <div className="landing__content">
+      <h1
+        className="landing__title"
+        data-aos="fade-down"
+        data-aos-delay="150"
+        data-aos-easing="ease-out">
+        an instock <br /> solution <br /> coming soon
+      </h1>
+      <div
+        className="landing__subtitle"
+        data-aos="fade-up"
+        data-aos-delay="450"
+        data-aos-easing="ease-out">
+        new website is under construction
+      </div>
+    </div>
+  </div>
+);
 
 const LandingForTablet = () => (
   <div className="landing landing--tablet">
+    <img src={TabletBG} className="landing__bg" alt="tablet-bg" />
     <div className="landing__content">
       <h1
         className="landing__title"
@@ -24,6 +49,7 @@ const LandingForTablet = () => (
 
 const LandingForDesktop = () => (
   <div className="landing landing--desktop">
+    <img src={TabletBG} className="landing__bg" alt="tablet-bg" />
     <div className="landing__content">
       <h1
         className="landing__title"
@@ -37,8 +63,7 @@ const LandingForDesktop = () => (
         data-aos="fade-up"
         data-aos-delay="450"
         data-aos-easing="ease-out">
-        <strong>d</strong> series&nbsp;&nbsp;&nbsp;by{' '}
-        <strong>Carl Gustav Magnusson</strong>
+        <strong>d</strong> series&nbsp;&nbsp;&nbsp;by <strong>Carl Gustav Magnusson</strong>
       </div>
       <button
         className="landing__call-to-action-button"
@@ -66,6 +91,7 @@ const App = () => (
       </div>
     </div>
     <div className="main">
+      <LandingForMobile />
       <LandingForTablet />
       <LandingForDesktop />
     </div>
