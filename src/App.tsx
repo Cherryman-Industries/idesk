@@ -37,7 +37,8 @@ const LandingForDesktop = () => (
         data-aos="fade-up"
         data-aos-delay="450"
         data-aos-easing="ease-out">
-        <strong>D</strong> series&nbsp;&nbsp;&nbsp;by <strong>Carl Gustav Magnusson</strong>
+        <strong>d</strong> series&nbsp;&nbsp;&nbsp;by{' '}
+        <strong>Carl Gustav Magnusson</strong>
       </div>
       <button
         className="landing__call-to-action-button"
