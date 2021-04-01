@@ -52,7 +52,9 @@ const LandingForTablet = () => (
 
 const LandingForDesktop = () => (
   <div className="landing landing--desktop">
-    <img src={DesktopBG} className="landing__bg" alt="desktop-bg" />
+    <div className="landing__table-img-container">
+      <img src={DesktopBG} className="landing__table-img" alt="desktop-bg" />
+    </div>
     <div className="landing__content">
       <h1
         className="landing__title"
@@ -66,7 +68,8 @@ const LandingForDesktop = () => (
         data-aos="fade-up"
         data-aos-delay="450"
         data-aos-easing="ease-out">
-        <strong>d</strong> series&nbsp;&nbsp;&nbsp;by <strong>Carl Gustav Magnusson</strong>
+        <strong style={{ fontWeight: 400 }}>d</strong> series&nbsp;&nbsp;&nbsp;by{' '}
+        <strong style={{ fontWeight: 400 }}>Carl Gustav Magnusson</strong>
       </div>
       <button
         className="landing__call-to-action-button"

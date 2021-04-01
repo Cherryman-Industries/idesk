@@ -1,6 +1,16 @@
 @import '../globals';
 
 @media screen and (min-width: $tablet) and (min-height: $mobile-lg) {
+    .navbar__burger-menu-button {
+        height: 0.65rem;
+        width: 0.65rem;
+    }
+
+    .navbar__arrow-container img {
+        height: 1.6rem;
+        width: 1.6rem;
+    }
+
     .main {
         border-bottom-width: 2rem;
     }
@@ -79,7 +89,7 @@
         display: block;
         height: initial;
         margin-left: 5rem;
-        margin-top: 8rem;
+        margin-top: 16rem;
         width: 100%;
     }
 
