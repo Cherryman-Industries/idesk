@@ -1,12 +1,6 @@
 @import '../globals';
 
 @media screen and (min-width: 0) {
-    .landing--tablet,
-    .landing--desktop {
-        display: none;
-        height: 0;
-    }
-
     .navbar {
         align-items: flex-end;
         display: flex;
@@ -78,6 +72,12 @@
         flex-grow: 1;
         margin-top: 1.3rem;
         overflow: hidden;
+    }
+
+    .landing--tablet,
+    .landing--desktop {
+        display: none;
+        height: 0;
     }
 
     .landing__bg {
