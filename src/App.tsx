@@ -2,6 +2,7 @@ import './scss/App.scss';
 import DownArrow from './assets/svgs/down-arrow.svg';
 import MobileBG from './assets/images/Opus Room 1_V12_PP.jpg';
 import TabletBG from './assets/images/d room - d benching_V7-2_T.jpg';
+import DesktopBG from './assets/images/d room - d benching_V7_mini.png';
 
 const LandingForMobile = () => (
   <div className="landing landing--mobile">
@@ -50,7 +51,7 @@ const LandingForTablet = () => (
 
 const LandingForDesktop = () => (
   <div className="landing landing--desktop">
-    <img src={TabletBG} className="landing__bg" alt="tablet-bg" />
+    <img src={DesktopBG} className="landing__bg" alt="desktop-bg" />
     <div className="landing__content">
       <h1
         className="landing__title"
