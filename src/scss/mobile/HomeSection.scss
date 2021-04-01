@@ -27,22 +27,11 @@
     }
 
     .navbar__arrow-container {
-        border-bottom: 0.2rem solid black;
         display: flex;
-    }
 
-    .navbar__arrow-icon {
-        margin-bottom: 0.2rem;
-        position: relative;
-        width: 0.9rem;
-
-        &::before {
-            background-color: black;
-            content: '';
-            height: 5rem;
-            position: absolute;
-            top: 0;
-            width: 100%;
+        img {
+            height: 1.2rem;
+            width: 1.2rem;
         }
     }
 
@@ -55,12 +44,12 @@
         &-button {
             background-color: black;
             border-radius: 50%;
-            height: 0.4rem;
-            width: 0.4rem;
+            height: 0.5rem;
+            width: 0.5rem;
         }
 
         &-button:not(:first-child) {
-            margin-left: 0.4rem;
+            margin-left: 0.5rem;
         }
     }
 
@@ -90,6 +79,25 @@
 
     .landing__content {
         color: white;
+        margin-left: 2rem;
+        margin-top: 16.5rem;
+    }
+
+    .landing__title {
+        &-top {
+            font-size: 2.1299rem;
+            line-height: 3.3rem;
+        }
+
+        &-bottom {
+            font-size: 3.3723rem;
+            line-height: 3.3rem;
+        }
+    }
+
+    .landing__subtitle {
+        font-size: 1.1537rem;
+        line-height: 6.7089rem;
     }
 }
 
@@ -140,5 +148,11 @@
         left: -20rem;
         position: absolute;
         top: -30rem;
+    }
+
+    .landing__content {
+        color: white;
+        margin-left: 4rem;
+        margin-top: 5em;
     }
 }

@@ -8,13 +8,14 @@ const LandingForMobile = () => (
   <div className="landing landing--mobile">
     <img src={MobileBG} className="landing__bg" alt="mobile-bg" />
     <div className="landing__content">
-      <h1
+      <div
         className="landing__title"
         data-aos="fade-down"
         data-aos-delay="150"
         data-aos-easing="ease-out">
-        an instock <br /> solution <br /> coming soon
-      </h1>
+        <div className="landing__title-top">coming soon</div>
+        <div className="landing__title-bottom">instock solution</div>
+      </div>
       <div
         className="landing__subtitle"
         data-aos="fade-up"
