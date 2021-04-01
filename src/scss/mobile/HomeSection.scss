@@ -1,0 +1,144 @@
+@import '../globals';
+
+@media screen and (min-width: 0) {
+    .landing--tablet,
+    .landing--desktop {
+        display: none;
+        height: 0;
+    }
+
+    .navbar {
+        align-items: flex-end;
+        display: flex;
+        height: 3.75rem;
+        justify-content: space-between;
+    }
+
+    .navbar__logo {
+        align-items: center;
+        display: inline-block;
+        font-size: 3rem;
+        font-weight: 300;
+        justify-content: flex-start;
+        margin-left: 4.5rem;
+        margin-top: 0.25rem;
+        transform: translateY(1rem);
+    }
+
+    .navbar__buttons-container {
+        align-items: flex-end;
+        display: flex;
+        height: 100%;
+        margin-right: 2rem;
+    }
+
+    .navbar__arrow-container {
+        border-bottom: 0.2rem solid black;
+        display: flex;
+    }
+
+    .navbar__arrow-icon {
+        margin-bottom: 0.2rem;
+        position: relative;
+        width: 0.9rem;
+
+        &::before {
+            background-color: black;
+            content: '';
+            height: 5rem;
+            position: absolute;
+            top: 0;
+            width: 100%;
+        }
+    }
+
+    .navbar__burger-menu {
+        display: flex;
+        list-style-type: none;
+        margin-right: 1.8rem;
+        position: relative;
+
+        &-button {
+            background-color: black;
+            border-radius: 50%;
+            height: 0.4rem;
+            width: 0.4rem;
+        }
+
+        &-button:not(:first-child) {
+            margin-left: 0.4rem;
+        }
+    }
+
+    .main {
+        border: 2rem solid white;
+        border-top: 0;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        margin-top: 1.3rem;
+        overflow: hidden;
+    }
+
+    .landing__bg {
+        height: 80rem;
+        left: -57rem;
+        object-fit: cover;
+        position: absolute;
+        top: -0.5rem;
+    }
+
+    .landing__content {
+        color: white;
+    }
+}
+
+@media screen and (max-width: $mobile-lg) {
+    .main {
+        border-bottom-width: 0;
+    }
+}
+
+@media screen and (min-width: $mobile-sm) and (max-height: $mobile-lg) and (orientation: landscape) {
+    .navbar {
+        align-items: flex-end;
+        display: flex;
+        height: 3.75rem;
+        justify-content: space-between;
+    }
+
+    .navbar__logo {
+        align-items: center;
+        display: inline-block;
+        font-size: 3rem;
+        font-weight: 300;
+        justify-content: flex-start;
+        margin-left: 4.5rem;
+        margin-top: 0.25rem;
+        transform: translateY(1rem);
+    }
+
+    .navbar__buttons-container {
+        align-items: flex-end;
+        display: flex;
+        height: 100%;
+        margin-right: 2rem;
+    }
+
+    .landing--tablet,
+    .landing--desktop {
+        display: none;
+        height: 0;
+    }
+
+    .landing {
+        overflow: hidden;
+    }
+
+    .landing__bg {
+        height: initial;
+        left: -20rem;
+        position: absolute;
+        top: -30rem;
+    }
+}

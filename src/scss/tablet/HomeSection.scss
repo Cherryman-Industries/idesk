@@ -1,0 +1,103 @@
+@import '../globals';
+
+@media screen and (min-width: $tablet) and (min-height: $mobile-lg) {
+    .main {
+        border-bottom-width: 2rem;
+    }
+
+    .landing--tablet {
+        display: initial;
+        height: initial;
+    }
+
+    .landing--mobile,
+    .landing--desktop {
+        display: none;
+        height: 0;
+    }
+
+    .landing__bg {
+        height: initial;
+        left: -14rem;
+        position: absolute;
+        top: -120rem;
+        transform: scale(1.2);
+    }
+
+    .landing__content {
+        display: block;
+        height: initial;
+        margin-left: 5rem;
+        margin-top: 8rem;
+        width: 100%;
+    }
+
+    .landing__title {
+        &-top {
+            font-size: 3.5rem;
+            line-height: 5.2rem;
+        }
+
+        &-bottom {
+            font-size: 5.5rem;
+            line-height: 5.2rem;
+        }
+    }
+
+    .landing__subtitle {
+        font-size: 2rem;
+        font-weight: 300;
+        line-height: 7.5598rem;
+    }
+}
+
+@media screen and (min-width: $tablet) and (orientation: portrait) {
+    .main {
+        border-bottom-width: 2rem;
+    }
+
+    .landing--tablet {
+        display: initial;
+        height: initial;
+    }
+
+    .landing--mobile,
+    .landing--desktop {
+        display: none;
+        height: 0;
+    }
+
+    .landing__bg {
+        height: initial;
+        left: -14rem;
+        position: absolute;
+        top: -95rem;
+        transform: scale(1.2);
+    }
+
+    .landing__content {
+        display: block;
+        height: initial;
+        margin-left: 5rem;
+        margin-top: 8rem;
+        width: 100%;
+    }
+
+    .landing__title {
+        &-top {
+            font-size: 3.5rem;
+            line-height: 5.2rem;
+        }
+
+        &-bottom {
+            font-size: 5.5rem;
+            line-height: 5.2rem;
+        }
+    }
+
+    .landing__subtitle {
+        font-size: 2rem;
+        font-weight: 300;
+        line-height: 7.5598rem;
+    }
+}
