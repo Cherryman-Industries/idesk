@@ -2,11 +2,10 @@
 
 @media screen and (min-width: 1025px) {
     .navbar {
-        height: 5.5rem;
+        height: 6.9rem;
     }
 
     .navbar__logo {
-        font-size: 4.3168rem;
         margin-left: 13rem;
     }
 
@@ -27,14 +26,9 @@
         width: 2rem;
     }
 
-    .main {
-        border-width: 3.4rem;
-        margin-top: 1.5rem;
-    }
-
     .landing {
         background-color: #e9e5e1;
-        background-size: 115%;
+        background-size: 140%;
         overflow: hidden;
         position: relative;
     }
@@ -43,12 +37,16 @@
         display: block;
         height: initial;
         margin-left: 10rem;
-        margin-top: 17.5rem;
+        margin-top: 7.5rem;
     }
 
     .landing__title {
         font-size: 6.1767rem;
         line-height: 5.2254rem;
+    }
+
+    .landing__title-top {
+        line-height: 7.2rem;
     }
 
     .landing__subtitle {

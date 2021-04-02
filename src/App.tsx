@@ -26,13 +26,13 @@ const App = () => (
             <div className="landing__title-top">coming soon</div>
             <div className="landing__title-bottom">instock solution</div>
           </div>
-          <div
+          {/* <div
             className="landing__subtitle"
             data-aos="fade-up"
             data-aos-delay="450"
             data-aos-easing="ease-out">
             new website is under construction
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

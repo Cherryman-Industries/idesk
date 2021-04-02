@@ -2,12 +2,12 @@
 
 @media screen and (min-width: $tablet) and (min-height: $mobile-lg) {
     .navbar {
-        height: 6.3rem;
+        height: 6.7rem;
     }
 
     .navbar__logo {
-        font-size: 4.278rem;
-        margin-left: 6.8rem;
+        font-size: 4.1rem;
+        margin-left: 7.5rem;
     }
 
     .navbar__buttons-container {
@@ -25,26 +25,25 @@
     }
 
     .main {
-        border-width: 2.6rem;
-        margin-top: 2rem;
+        border-width: 2.8rem;
     }
 
     .landing {
-        background-position: 50% 95%;
-        background-size: 150%;
+        background-position: 37.5% 95%;
+        background-size: 220%;
     }
 
     .landing__content {
         display: block;
         height: initial;
         margin-left: 5rem;
-        margin-top: 8rem;
+        margin-top: 18rem;
         width: 100%;
     }
 
     .landing__title-top {
         font-size: 3.5rem;
-        line-height: 5.2rem;
+        line-height: 7.2rem;
     }
 
     .landing__title-bottom {
@@ -62,22 +61,30 @@
 
 @media screen and (min-width: $tablet) and (min-height: $mobile-lg) and (orientation: landscape) {
     .navbar {
-        height: 5rem;
+        height: 5.9rem;
+    }
+
+    .navbar__logo {
+        margin-left: 10rem;
     }
 
     .main {
-        border-bottom-width: 3.3rem;
-        margin-top: 1.3rem;
+        border-width: 3.2rem;
+    }
+
+    .landing {
+        background-position: 57.5% 95%;
+        background-size: 150%;
     }
 
     .landing__content {
         margin-left: 7rem;
-        margin-top: 9rem;
+        margin-top: 5rem;
     }
 
     .landing__title-top {
         font-size: 3.5rem;
-        line-height: 5.2rem;
+        line-height: 6.2rem;
     }
 
     .landing__title-bottom {
