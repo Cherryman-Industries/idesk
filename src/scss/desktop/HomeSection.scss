@@ -1,20 +1,20 @@
 @import '../globals';
 
-@media screen and (min-width: $laptop) {
+@media screen and (min-width: 1025px) {
     .navbar {
-        height: 7rem;
+        height: 5.5rem;
     }
 
     .navbar__logo {
         font-size: 4.3168rem;
-        margin-left: 10rem;
+        margin-left: 13rem;
     }
 
     .navbar__buttons-container {
         align-items: flex-end;
         display: flex;
         height: 100%;
-        margin-right: 10rem;
+        margin-right: 13rem;
     }
 
     .navbar__burger-menu-button {
@@ -29,36 +29,14 @@
 
     .main {
         border-width: 3.4rem;
-        margin-top: 2rem;
-    }
-
-    .landing--desktop {
-        display: initial;
-        height: initial;
-    }
-
-    .landing--tablet,
-    .landing--mobile {
-        display: none;
-        height: 0;
+        margin-top: 1.5rem;
     }
 
     .landing {
         background-color: #e9e5e1;
+        background-size: 115%;
         overflow: hidden;
         position: relative;
-    }
-
-    .landing__table-img-container {
-        bottom: -70rem;
-        position: absolute;
-        right: -50rem;
-        width: 180rem;
-        z-index: 10;
-    }
-
-    .landing__table-img {
-        width: 100%;
     }
 
     .landing__content {
@@ -74,7 +52,6 @@
     }
 
     .landing__subtitle {
-        color: black;
         font-size: 2.2461rem;
 
         &--desktop strong:nth-child(1) {

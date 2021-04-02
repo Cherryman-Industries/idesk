@@ -63,18 +63,11 @@
         overflow: hidden;
     }
 
-    .landing--tablet,
-    .landing--desktop {
-        display: none;
-        height: 0;
-    }
-
-    .landing__bg {
-        height: 80rem;
-        left: -57rem;
-        object-fit: cover;
-        position: absolute;
-        top: -0.5rem;
+    .landing {
+        background-image: url('../../assets/images/table-tall.jpg');
+        background-position: 39% 90%;
+        background-repeat: no-repeat;
+        background-size: 230%;
     }
 
     .landing__content {
@@ -83,16 +76,14 @@
         margin-top: 16.5rem;
     }
 
-    .landing__title {
-        &-top {
-            font-size: 2.1299rem;
-            line-height: 3.3rem;
-        }
+    .landing__title-top {
+        font-size: 2.1299rem;
+        line-height: 3.3rem;
+    }
 
-        &-bottom {
-            font-size: 3.3723rem;
-            line-height: 3.3rem;
-        }
+    .landing__title-bottom {
+        font-size: 3.3723rem;
+        line-height: 3.3rem;
     }
 
     .landing__subtitle {
@@ -104,6 +95,12 @@
 @media screen and (max-width: $mobile-lg) {
     .main {
         border-bottom-width: 0;
+    }
+}
+
+@media screen and (max-width: $mobile-sm) {
+    .landing {
+        background-size: cover;
     }
 }
 
@@ -133,26 +130,19 @@
         margin-right: 2rem;
     }
 
-    .landing--tablet,
-    .landing--desktop {
-        display: none;
-        height: 0;
-    }
-
     .landing {
+        background-position: center 94%;
+        background-size: 105%;
         overflow: hidden;
-    }
-
-    .landing__bg {
-        height: initial;
-        left: -20rem;
-        position: absolute;
-        top: -30rem;
     }
 
     .landing__content {
         color: white;
         margin-left: 4rem;
-        margin-top: 5em;
+        margin-top: 4rem;
+    }
+
+    .landing__subtitle {
+        line-height: 4rem;
     }
 }

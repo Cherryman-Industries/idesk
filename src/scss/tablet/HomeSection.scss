@@ -1,6 +1,19 @@
 @import '../globals';
 
 @media screen and (min-width: $tablet) and (min-height: $mobile-lg) {
+    .navbar {
+        height: 6.3rem;
+    }
+
+    .navbar__logo {
+        font-size: 4.278rem;
+        margin-left: 6.8rem;
+    }
+
+    .navbar__buttons-container {
+        margin-right: 6.8rem;
+    }
+
     .navbar__burger-menu-button {
         height: 0.65rem;
         width: 0.65rem;
@@ -12,26 +25,13 @@
     }
 
     .main {
-        border-bottom-width: 2rem;
+        border-width: 2.6rem;
+        margin-top: 2rem;
     }
 
-    .landing--tablet {
-        display: initial;
-        height: initial;
-    }
-
-    .landing--mobile,
-    .landing--desktop {
-        display: none;
-        height: 0;
-    }
-
-    .landing__bg {
-        height: initial;
-        left: -14rem;
-        position: absolute;
-        top: -120rem;
-        transform: scale(1.2);
+    .landing {
+        background-position: 50% 95%;
+        background-size: 150%;
     }
 
     .landing__content {
@@ -42,16 +42,14 @@
         width: 100%;
     }
 
-    .landing__title {
-        &-top {
-            font-size: 3.5rem;
-            line-height: 5.2rem;
-        }
+    .landing__title-top {
+        font-size: 3.5rem;
+        line-height: 5.2rem;
+    }
 
-        &-bottom {
-            font-size: 5.5rem;
-            line-height: 5.2rem;
-        }
+    .landing__title-bottom {
+        font-size: 5.5rem;
+        line-height: 5.2rem;
     }
 
     .landing__subtitle {
@@ -61,48 +59,29 @@
     }
 }
 
-@media screen and (min-width: $tablet) and (orientation: portrait) {
+@media screen and (min-width: $tablet) and (orientation: landscape) {
+    .navbar {
+        height: 5rem;
+    }
+
     .main {
-        border-bottom-width: 2rem;
-    }
-
-    .landing--tablet {
-        display: initial;
-        height: initial;
-    }
-
-    .landing--mobile,
-    .landing--desktop {
-        display: none;
-        height: 0;
-    }
-
-    .landing__bg {
-        height: initial;
-        left: -14rem;
-        position: absolute;
-        top: -95rem;
-        transform: scale(1.2);
+        border-bottom-width: 3.3rem;
+        margin-top: 1.3rem;
     }
 
     .landing__content {
-        display: block;
-        height: initial;
-        margin-left: 5rem;
-        margin-top: 16rem;
-        width: 100%;
+        margin-left: 7rem;
+        margin-top: 9rem;
     }
 
-    .landing__title {
-        &-top {
-            font-size: 3.5rem;
-            line-height: 5.2rem;
-        }
+    .landing__title-top {
+        font-size: 3.5rem;
+        line-height: 5.2rem;
+    }
 
-        &-bottom {
-            font-size: 5.5rem;
-            line-height: 5.2rem;
-        }
+    .landing__title-bottom {
+        font-size: 5.5rem;
+        line-height: 5.2rem;
     }
 
     .landing__subtitle {
