@@ -59,7 +59,7 @@
     }
 }
 
-@media screen and (min-width: $tablet) and (orientation: landscape) {
+@media screen and (min-width: $tablet) and (min-height: $mobile-lg) and (orientation: landscape) {
     .navbar {
         height: 5rem;
     }
