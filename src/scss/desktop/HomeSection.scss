@@ -48,26 +48,22 @@
     .landing__title-top {
         line-height: 7.2rem;
     }
+}
 
-    .landing__subtitle {
-        font-size: 2.2461rem;
-
-        &--desktop strong:nth-child(1) {
-            font-size: 3.0883rem;
-            font-weight: 300;
-        }
+@media screen and (min-aspect-ratio: 16/9) {
+    .landing {
+        background-size: 130%;
     }
+}
 
-    .landing__call-to-action-button {
-        background-color: transparent;
-        border: 0.1rem solid rgba(0, 0, 0, 0.5);
-        color: rgba(0, 0, 0, 0.75);
-        cursor: pointer;
-        font-size: 1.4038rem;
-        font-weight: 300;
-        height: 2.3rem;
-        line-height: 2.3rem;
-        margin-top: 11rem;
-        width: 7.2rem;
+@media screen and (min-aspect-ratio: 2/1) {
+    .landing {
+        background-size: 120%;
+    }
+}
+
+@media screen and (min-aspect-ratio: 16/7) {
+    .landing {
+        background-size: 105%;
     }
 }

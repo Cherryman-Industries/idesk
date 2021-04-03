@@ -82,11 +82,6 @@
         font-weight: 300;
         line-height: 3.3rem;
     }
-
-    .landing__subtitle {
-        font-size: 1.1537rem;
-        margin-top: 1rem;
-    }
 }
 
 @media screen and (max-width: $mobile-lg) {
@@ -132,9 +127,5 @@
 
     .landing__title-top {
         line-height: 4.3rem;
-    }
-
-    .landing__subtitle {
-        line-height: 4rem;
     }
 }
