@@ -56,14 +56,24 @@
         flex-direction: column;
         flex-grow: 1;
         overflow: hidden;
+
+        .loader {
+            align-self: center;
+            margin-top: 5rem;
+        }
     }
 
     .landing {
-        background-image: url('../../assets/images/table-tall.jpg');
-        background-position: 39% 97%;
-        background-repeat: no-repeat;
-        background-size: 230%;
+        position: relative;
+    }
+
+    .landing__img {
         filter: brightness(1.1);
+        left: -127%;
+        position: absolute;
+        top: -87%;
+        transform: scale(0.605);
+        transition: transform 0.3s;
     }
 
     .landing__content {
@@ -113,10 +123,10 @@
         margin-right: 2rem;
     }
 
-    .landing {
-        background-position: center 94%;
-        background-size: 105%;
-        overflow: hidden;
+    .landing__img {
+        left: -28.5%;
+        top: -370%;
+        transform: scale(0.7);
     }
 
     .landing__content {

@@ -26,11 +26,10 @@
         width: 2rem;
     }
 
-    .landing {
-        background-color: #e9e5e1;
-        background-size: 140%;
-        overflow: hidden;
-        position: relative;
+    .landing__img {
+        left: -2.5%;
+        top: 1.5%;
+        transform: scale(1.5);
     }
 
     .landing__content {
