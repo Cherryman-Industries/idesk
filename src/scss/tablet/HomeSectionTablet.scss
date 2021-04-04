@@ -1,13 +1,12 @@
-@import '../globals';
-
-/* iPads (portrait and landscape) ----------- */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (min-device-height: 768px) {
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (min-resolution: 192dpi) and (orientation: portrait) {
     .navbar {
         height: 6.7rem;
     }
 
     .navbar__logo {
         font-size: 4.1rem;
+        margin-left: 7.5rem;
     }
 
     .navbar__burger-menu-button {
@@ -18,71 +17,6 @@
     .navbar__arrow-container img {
         height: 1.6rem;
         width: 1.6rem;
-    }
-
-    .landing__content {
-        display: block;
-        height: initial;
-        width: 100%;
-    }
-
-    .landing__title-top {
-        font-size: 3.5rem;
-    }
-
-    .landing__title-bottom {
-        font-size: 5.5rem;
-        font-weight: 300;
-    }
-
-    .landing__subtitle {
-        font-size: 2rem;
-        font-weight: 300;
-    }
-}
-
-/* iPads (landscape) ----------- */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (min-device-height: 768px) and (orientation: landscape) {
-    .navbar {
-        height: 5.9rem;
-    }
-
-    .navbar__logo {
-        margin-left: 10rem;
-    }
-
-    .main {
-        border-width: 3.2rem;
-    }
-
-    .landing__img {
-        bottom: -7rem;
-        left: -13rem;
-        transform: scale(1.13);
-    }
-
-    .landing__content {
-        margin-left: 7rem;
-        margin-top: 5rem;
-    }
-
-    .landing__title-top {
-        line-height: 6.2rem;
-    }
-
-    .landing__title-bottom {
-        line-height: 5.2rem;
-    }
-
-    .landing__subtitle {
-        line-height: 7.5598rem;
-    }
-}
-
-/* iPads (portrait) ----------- */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-    .navbar__logo {
-        margin-left: 7.5rem;
     }
 
     .main {
@@ -98,6 +32,62 @@
     .landing__content {
         display: block;
         height: initial;
+        margin-left: 5rem;
+        margin-top: 5rem;
+        width: 100%;
+    }
+
+    .landing__title-top {
+        font-size: 3.5rem;
+        line-height: 6.2rem;
+    }
+
+    .landing__title-bottom {
+        font-size: 5.5rem;
+        font-weight: 300;
+        line-height: 5.2rem;
+    }
+
+    .landing__subtitle {
+        line-height: 7.5598rem;
+    }
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (min-resolution: 192dpi) and (orientation: landscape) {
+    .navbar {
+        height: 5.9rem;
+    }
+
+    .navbar__logo {
+        font-size: 4.1rem;
+        margin-left: 10rem;
+    }
+
+    .navbar__burger-menu-button {
+        height: 0.65rem;
+        width: 0.65rem;
+    }
+
+    .navbar__arrow-container img {
+        height: 1.6rem;
+        width: 1.6rem;
+    }
+
+    .main {
+        border-width: 3.2rem;
+    }
+
+    .landing__img {
+        bottom: 135rem;
+        left: -28rem;
+        transform: scale(3.1);
+        transform-origin: 0 0;
+    }
+
+    .landing__content {
+        display: block;
+        height: initial;
         margin-left: 7rem;
         margin-top: 5rem;
         width: 100%;
@@ -109,6 +99,118 @@
     }
 
     .landing__title-bottom {
+        font-size: 5.5rem;
+        font-weight: 300;
+        line-height: 5.2rem;
+    }
+
+    .landing__subtitle {
+        line-height: 7.5598rem;
+    }
+}
+
+/* iPads PRO (portrait) ----------- */
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (min-resolution: 192dpi) and (orientation: portrait) {
+    .navbar {
+        height: 6.7rem;
+    }
+
+    .navbar__logo {
+        font-size: 4.1rem;
+        margin-left: 7.5rem;
+    }
+
+    .navbar__burger-menu-button {
+        height: 0.65rem;
+        width: 0.65rem;
+    }
+
+    .navbar__arrow-container img {
+        height: 1.6rem;
+        width: 1.6rem;
+    }
+
+    .main {
+        border-width: 2.8rem;
+    }
+
+    .landing__img {
+        bottom: -8rem;
+        left: 83.5rem;
+        transform: scale(2.45);
+    }
+
+    .landing__content {
+        display: block;
+        height: initial;
+        margin-left: 5rem;
+        margin-top: 5rem;
+        width: 100%;
+    }
+
+    .landing__title-top {
+        font-size: 3.5rem;
+        line-height: 6.2rem;
+    }
+
+    .landing__title-bottom {
+        font-size: 5.5rem;
+        font-weight: 300;
+        line-height: 5.2rem;
+    }
+
+    .landing__subtitle {
+        line-height: 7.5598rem;
+    }
+}
+
+/* iPads PRO (landscape) ----------- */
+@media only screen and (min-device-width: 1366px) and (max-device-width: 1366px) and (min-resolution: 192dpi) and (orientation: landscape) {
+    .navbar {
+        height: 5.9rem;
+    }
+
+    .navbar__logo {
+        font-size: 4.1rem;
+        margin-left: 10rem;
+    }
+
+    .navbar__burger-menu-button {
+        height: 0.65rem;
+        width: 0.65rem;
+    }
+
+    .navbar__arrow-container img {
+        height: 1.6rem;
+        width: 1.6rem;
+    }
+
+    .main {
+        border-width: 3.2rem;
+    }
+
+    .landing__img {
+        bottom: -9rem;
+        left: 97.5rem;
+        transform: scale(3.1);
+    }
+
+    .landing__content {
+        display: block;
+        height: initial;
+        margin-left: 7rem;
+        margin-top: 5rem;
+        width: 100%;
+    }
+
+    .landing__title-top {
+        font-size: 3.5rem;
+        line-height: 6.2rem;
+    }
+
+    .landing__title-bottom {
+        font-size: 5.5rem;
+        font-weight: 300;
         line-height: 5.2rem;
     }
 

@@ -1,9 +1,13 @@
-@import '../globals';
+/* iPhone 6/7/8 (portrait)----------- */
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (min-resolution: 192dpi) and (orientation: portrait) {
+    .landing__img {
+        left: 17rem;
+        transform: scale(1.75);
+    }
 
-/* iPhone 6/7/8 (portrait & landscape)----------- */
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
     .landing__content {
         margin-left: 2rem;
+        margin-top: 10rem;
     }
 
     .landing__title-top {
@@ -17,7 +21,7 @@
 }
 
 /* iPhone 6/7/8 (landscape)----------- */
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape) {
+@media only screen and (min-device-width: 667px) and (max-device-height: 375px) and (min-resolution: 192dpi) and (orientation: landscape) {
     .landing__img {
         bottom: 88.5rem;
         left: -12rem;
@@ -29,23 +33,7 @@
         margin-left: 2rem;
         margin-top: 2rem;
     }
-}
 
-/* iPhone 6/7/8 (portrait)----------- */
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) {
-    .landing__img {
-        left: 15.9rem;
-        transform: scale(1.75);
-    }
-
-    .landing__content {
-        margin-left: 2rem;
-        margin-top: 10rem;
-    }
-}
-
-/* iPhone X (portrait & landscape)----------- */
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
     .landing__title-top {
         font-size: 2.1299rem;
     }
@@ -56,31 +44,8 @@
     }
 }
 
-/* iPhone X (landscape)----------- */
-@media only screen and (min-device-width: 668px) and (max-device-width: 812px) and (orientation: landscape) {
-    .landing__img {
-        bottom: 90.75rem;
-        left: -4rem;
-        transform: scale(4.075);
-        transform-origin: 0% 0%;
-    }
-
-    .landing__content {
-        margin-left: 4rem;
-        margin-top: 2.5rem;
-    }
-
-    .landing__title-top {
-        line-height: 4.3rem;
-    }
-
-    .landing__title-bottom {
-        line-height: 3.3rem;
-    }
-}
-
 /* iPhone X (portrait)----------- */
-@media only screen and (min-device-width: 375px) and (max-device-width: 668px) and (min-device-height: 668px) and (orientation: portrait) {
+@media only screen and (min-device-width: 375px) and (max-device-width: 667.1px) and (min-device-height: 667.1px) and (min-resolution: 288dpi) and (orientation: portrait) {
     .landing__img {
         left: 5.2rem;
         transform: scale(1.4);
@@ -92,10 +57,39 @@
     }
 
     .landing__title-top {
+        font-size: 2.1299rem;
         line-height: 5.3rem;
     }
 
     .landing__title-bottom {
+        font-size: 3.3723rem;
+        font-weight: 300;
+        line-height: 3.3rem;
+    }
+}
+
+/* iPhone X (landscape)----------- */
+@media only screen and (min-device-width: 667.1px) and (max-device-width: 812px) and (min-resolution: 288dpi) and (orientation: landscape) {
+    .landing__img {
+        bottom: 90.75rem;
+        left: -4rem;
+        transform: scale(4.075);
+        transform-origin: 0% 0%;
+    }
+
+    .landing__content {
+        margin-left: 2rem;
+        margin-top: 2.5rem;
+    }
+
+    .landing__title-top {
+        font-size: 2.1299rem;
+        line-height: 4.3rem;
+    }
+
+    .landing__title-bottom {
+        font-size: 3.3723rem;
+        font-weight: 300;
         line-height: 3.3rem;
     }
 }

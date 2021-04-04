@@ -11,7 +11,7 @@ interface LandingSectionProps {
 }
 
 const LandingSection = ({ setIsLoading }: LandingSectionProps) => {
-  const isWideScreen = useMedia({ query: '(min-width: 1024px) and (min-aspect-ratio: 4/3)' });
+  const isWideScreen = useMedia({ query: '(min-width: 1366.1px)' });
   const bgImg = isWideScreen ? WideTableImg : TallTableImg;
 
   return (
