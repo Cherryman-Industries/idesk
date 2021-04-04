@@ -4,6 +4,13 @@
     height: 100vh;
     position: fixed;
     width: 100%;
+
+    .loader {
+        left: 50%;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
 }
 
 .main {
@@ -12,12 +19,8 @@
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    overflow: hidden;
-
-    .loader {
-        align-self: center;
-        margin-top: 5rem;
-    }
+    position: relative;
+    transition: opacity 0.3s ease-out;
 }
 
 @media only screen and (max-device-width: 375px) {

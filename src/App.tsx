@@ -10,12 +10,12 @@ interface LandingSectionProps {
   isLoading: boolean;
 }
 
-const LandingSection = ({ setIsLoading }: LandingSectionProps) => {
+const LandingSection = ({ setIsLoading, isLoading }: LandingSectionProps) => {
   const isWideScreen = useMedia({ query: '(min-width: 1366.1px)' });
   const bgImg = isWideScreen ? WideTableImg : TallTableImg;
 
   return (
-    <div className="landing" data-aos="fade-in" data-aos-duration="1000">
+    <div className="landing">
       <img
         src={bgImg}
         alt="table"
@@ -52,10 +52,10 @@ const App = () => {
         <span className="navbar__logo">idesk</span>
         <div className="navbar__right"></div>
       </div>
-      <div className="main">
-        {isLoading && <div className="loader"></div>}
+      <div className="main" style={{ opacity: isLoading ? 0 : 1 }}>
         <LandingSection setIsLoading={setIsLoading} isLoading={isLoading} />
       </div>
+      {isLoading && <div className="loader"></div>}
     </div>
   );
 };
