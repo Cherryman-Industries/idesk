@@ -11,8 +11,8 @@ interface LandingSectionProps {
 }
 
 const LandingSection = ({ setIsLoading }: LandingSectionProps) => {
-  const isLargeScreen = useMedia({ query: '(min-width: 1024px)' });
-  const bgImg = isLargeScreen ? WideTableImg : TallTableImg;
+  const isWideScreen = useMedia({ query: '(min-width: 1024px) and (min-aspect-ratio: 4/3)' });
+  const bgImg = isWideScreen ? WideTableImg : TallTableImg;
 
   return (
     <div className="landing" data-aos="fade-in" data-aos-duration="1000">
