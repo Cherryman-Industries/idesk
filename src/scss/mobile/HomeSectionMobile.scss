@@ -1,5 +1,51 @@
+/* iPhone 5/SE (portrait)----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (min-resolution: 192dpi) and (orientation: portrait) {
+    .landing__img {
+        left: 11.75rem;
+        transform: scale(1.65);
+    }
+
+    .landing__content {
+        margin-left: 2rem;
+        margin-top: 10rem;
+    }
+
+    .landing__title-top {
+        font-size: 2.1299rem;
+    }
+
+    .landing__title-bottom {
+        font-size: 3.3723rem;
+        font-weight: 300;
+    }
+}
+
+/* iPhone 5/SE (landscape)----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (min-resolution: 192dpi) and (orientation: landscape) {
+    .landing__img {
+        bottom: 56rem;
+        left: 0;
+        transform: scale(3.3);
+        transform-origin: 0% 0%;
+    }
+
+    .landing__content {
+        margin-left: 2rem;
+        margin-top: 2rem;
+    }
+
+    .landing__title-top {
+        font-size: 2.1299rem;
+    }
+
+    .landing__title-bottom {
+        font-size: 3.3723rem;
+        font-weight: 300;
+    }
+}
+
 /* iPhone 6/7/8 (portrait)----------- */
-@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (min-resolution: 192dpi) and (orientation: portrait) {
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (min-resolution: 192dpi) and (aspect-ratio: 375/667) and (orientation: portrait) {
     .landing__img {
         left: 17rem;
         transform: scale(1.75);
@@ -21,7 +67,7 @@
 }
 
 /* iPhone 6/7/8 (landscape)----------- */
-@media only screen and (min-device-width: 667px) and (max-device-height: 375px) and (min-resolution: 192dpi) and (orientation: landscape) {
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (min-resolution: 192dpi) and (aspect-ratio: 667/375) and (orientation: landscape) {
     .landing__img {
         bottom: 88.5rem;
         left: -12rem;
@@ -45,7 +91,7 @@
 }
 
 /* iPhone X (portrait)----------- */
-@media only screen and (min-device-width: 375px) and (max-device-width: 667.1px) and (min-device-height: 667.1px) and (min-resolution: 288dpi) and (orientation: portrait) {
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (min-resolution: 288dpi) and (orientation: portrait) {
     .landing__img {
         left: 5.2rem;
         transform: scale(1.4);
@@ -69,7 +115,7 @@
 }
 
 /* iPhone X (landscape)----------- */
-@media only screen and (min-device-width: 667.1px) and (max-device-width: 812px) and (min-resolution: 288dpi) and (orientation: landscape) {
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (min-resolution: 288dpi) and (orientation: landscape) {
     .landing__img {
         bottom: 90.75rem;
         left: -4rem;
