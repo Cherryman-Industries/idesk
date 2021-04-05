@@ -16,7 +16,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    text-rendering: optimizeLegibility;
 }
 
 html,
@@ -31,19 +30,19 @@ body {
 
 .loader {
     animation: spin 1s linear infinite;
-    border: 8px solid #f3f3f3;
+    border: 0.8rem solid #f3f3f3;
     border-radius: 50%;
-    border-top: 8px solid #ccc;
-    height: 60px;
-    width: 60px;
+    border-top: 0.8rem solid #ccc;
+    height: 6rem;
+    width: 6rem;
 }
 
 @keyframes spin {
     0% {
-        transform: rotate(0deg);
+        transform: translate(-50%) rotate(0deg);
     }
 
     100% {
-        transform: rotate(360deg);
+        transform: translate(-50%) rotate(360deg);
     }
 }
