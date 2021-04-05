@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { useMedia } from 'react-media';
-import Div100vh from 'react-div-100vh';
 
 import TallTableImg from './assets/images/table-tall.jpg';
 import WideTableImg from './assets/images/table-wide.jpg';
@@ -9,10 +8,9 @@ import './scss/App.scss';
 
 interface LandingSectionProps {
   setIsLoading: (prop: boolean) => void;
-  isLoading: boolean;
 }
 
-const LandingSection = ({ setIsLoading, isLoading }: LandingSectionProps) => {
+const LandingSection = ({ setIsLoading }: LandingSectionProps) => {
   const isWideScreen = useMedia({ query: '(min-width: 1366.1px)' });
   const bgImg = isWideScreen ? WideTableImg : TallTableImg;
 
@@ -49,18 +47,16 @@ const App = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   return (
-    <Div100vh>
-      <div className="app">
-        <div className="navbar">
-          <span className="navbar__logo">idesk</span>
-          <div className="navbar__right"></div>
-        </div>
-        <div className="main" style={{ opacity: isLoading ? 0 : 1 }}>
-          <LandingSection setIsLoading={setIsLoading} isLoading={isLoading} />
-        </div>
-        {isLoading && <div className="loader"></div>}
+    <div className="app">
+      <div className="navbar">
+        <span className="navbar__logo">idesk</span>
+        <div className="navbar__right"></div>
       </div>
-    </Div100vh>
+      <div className="main" style={{ opacity: isLoading ? 0 : 1 }}>
+        <LandingSection setIsLoading={setIsLoading} />
+      </div>
+      {isLoading && <div className="loader"></div>}
+    </div>
   );
 };
 
