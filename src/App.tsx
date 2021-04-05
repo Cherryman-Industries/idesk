@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useMedia } from 'react-media';
 
 import TallTableImg from './assets/images/table-tall.jpg';
@@ -43,8 +43,20 @@ const LandingSection = ({ setIsLoading }: LandingSectionProps) => {
   );
 };
 
+const onResize = () => {
+  document.addEventListener('resize', () => {
+    const vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+  });
+};
+
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    onResize();
+    return () => document.removeEventListener('resize', onResize);
+  }, []);
 
   return (
     <div className="app">
