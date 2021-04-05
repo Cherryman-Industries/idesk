@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import { useMedia } from 'react-media';
+import Div100vh from 'react-div-100vh';
+
 import TallTableImg from './assets/images/table-tall.jpg';
 import WideTableImg from './assets/images/table-wide.jpg';
 
@@ -47,16 +49,18 @@ const App = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   return (
-    <div className="app">
-      <div className="navbar">
-        <span className="navbar__logo">idesk</span>
-        <div className="navbar__right"></div>
+    <Div100vh>
+      <div className="app">
+        <div className="navbar">
+          <span className="navbar__logo">idesk</span>
+          <div className="navbar__right"></div>
+        </div>
+        <div className="main" style={{ opacity: isLoading ? 0 : 1 }}>
+          <LandingSection setIsLoading={setIsLoading} isLoading={isLoading} />
+        </div>
+        {isLoading && <div className="loader"></div>}
       </div>
-      <div className="main" style={{ opacity: isLoading ? 0 : 1 }}>
-        <LandingSection setIsLoading={setIsLoading} isLoading={isLoading} />
-      </div>
-      {isLoading && <div className="loader"></div>}
-    </div>
+    </Div100vh>
   );
 };
 
